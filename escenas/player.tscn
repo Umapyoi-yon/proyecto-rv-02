@@ -8,7 +8,7 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_kkt6c"]
 
-[node name="player" type="RigidBody3D"]
+[node name="player" type="RigidBody3D" groups=["player"]]
 script = ExtResource("1_esbpa")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]

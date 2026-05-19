@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cpwm6bcmpahbk"]
+[gd_scene load_steps=7 format=3 uid="uid://cpwm6bcmpahbk"]
 
 [ext_resource type="PackedScene" uid="uid://dk0q5n3cdeg85" path="res://escenas/player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://c6of3rsx6fgxl" path="res://escenas/coin_colletion.tscn" id="2_0kxa1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
 sky_top_color = Color(0.31764707, 0.43529412, 0.7176471, 1)
@@ -32,4 +33,7 @@ size = Vector3(58.29, 2, 55.25)
 material = SubResource("StandardMaterial3D_h2yge")
 
 [node name="player" parent="." instance=ExtResource("1_ig7tw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 4.981)
+
+[node name="CoinColletion" parent="." instance=ExtResource("2_0kxa1")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 2, -0.045)
