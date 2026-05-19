@@ -1,10 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://dk0q5n3cdeg85"]
+[gd_scene load_steps=5 format=3 uid="uid://dk0q5n3cdeg85"]
+
+[ext_resource type="Script" uid="uid://cvf560qkab8sd" path="res://escenas/player.gd" id="1_esbpa"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_sh265"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_4flbx"]
 
+[sub_resource type="BoxMesh" id="BoxMesh_kkt6c"]
+
 [node name="player" type="RigidBody3D"]
+script = ExtResource("1_esbpa")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_sh265")
@@ -12,5 +17,11 @@ mesh = SubResource("SphereMesh_sh265")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_4flbx")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4217527, 1.4464417)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.22292209, 0, 0, 0, 0.3879699, 0, 0, 0, 0.1888848, 0, 0.40527028, 0)
+mesh = SubResource("BoxMesh_kkt6c")
