@@ -16,7 +16,7 @@ background_mode = 2
 sky = SubResource("Sky_ig7tw")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2yge"]
-albedo_color = Color(0.6039216, 0.6509804, 0.63529414, 1)
+albedo_color = Color(0.3942164, 0.6621692, 0.904301, 1)
 
 [node name="Main" type="Node3D"]
 
@@ -24,7 +24,7 @@ albedo_color = Color(0.6039216, 0.6509804, 0.63529414, 1)
 environment = SubResource("Environment_0xm2m")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.86312246, 0.5049948, 0, -0.5049948, -0.86312246, 0, 20.122124, -18.764118)
+transform = Transform3D(1, 0, 0, 0, -0.6934144, 0.72053915, 0, -0.72053915, -0.6934144, 0, 20.122124, -18.764118)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009986877, 0.009596825, -0.15487576)
@@ -35,5 +35,22 @@ material = SubResource("StandardMaterial3D_h2yge")
 [node name="player" parent="." instance=ExtResource("1_ig7tw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 4.981)
 
-[node name="CoinColletion" parent="." instance=ExtResource("2_0kxa1")]
+[node name="Node" type="Node" parent="."]
+
+[node name="CoinColletion" parent="Node" instance=ExtResource("2_0kxa1")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 2, -0.045)
+
+[node name="CoinColletion2" parent="Node" instance=ExtResource("2_0kxa1")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.7684622, 1.9759269, -0.39818573)
+
+[node name="CoinColletion3" parent="Node" instance=ExtResource("2_0kxa1")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.6381649, 1.841785, -4.235738)
+
+[node name="CoinColletion4" parent="Node" instance=ExtResource("2_0kxa1")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.053016186, 1.9759269, -6.934149)
+
+[node name="CoinColletion5" parent="Node" instance=ExtResource("2_0kxa1")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.7684622, 1.9759269, -10.217598)
+
+[node name="CoinColletion6" parent="Node" instance=ExtResource("2_0kxa1")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.06945038, 1.9759269, -13.729769)
