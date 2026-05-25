@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dk0q5n3cdeg85"]
+[gd_scene load_steps=6 format=3 uid="uid://dk0q5n3cdeg85"]
 
 [ext_resource type="Script" uid="uid://cvf560qkab8sd" path="res://escenas/player.gd" id="1_esbpa"]
+[ext_resource type="PackedScene" uid="uid://b7p2m01jloo1w" path="res://escenas/hud.tscn" id="2_kkt6c"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_sh265"]
 
@@ -27,3 +28,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4217527, 1.4464417)
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.22292209, 0, 0, 0, 0.3879699, 0, 0, 0, 0.1888848, 0, 0.40527028, 0)
 mesh = SubResource("BoxMesh_kkt6c")
+
+[node name="HUD" parent="." instance=ExtResource("2_kkt6c")]
